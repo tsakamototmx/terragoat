@@ -22,7 +22,7 @@ resource "aws_db_instance" "default" {
   publicly_accessible     = true
 
   tags = merge({
-    Name        = "${local.resource_prefix.value}-rds"
+    Name        = "${local.resource_prefix.value}-rds-test"
     Environment = local.resource_prefix.value
     }, {
     git_commit           = "e6d83b21346fe85d4fe28b16c0b2f1e0662eb1d7"
